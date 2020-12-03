@@ -1,21 +1,27 @@
-import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {Button, ThemeProvider} from "react-native-elements";
+import {StyleSheet, View, ViewStyle} from "react-native";
+import Icon from 'react-native-vector-icons/FontAwesome5';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+    return (
+        <ThemeProvider>
+            <View style={styles.container}>
+                <Button type="clear" icon={<Icon size={36} name={'arrow-right'} color={"white"} />}/>
+            </View>
+        </ThemeProvider>
+    );
+};
+
+interface Styles {
+    container: ViewStyle;
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+const styles = StyleSheet.create<Styles>({
+    container: {
+        flex: 1,
+        alignItems: 'stretch',
+        justifyContent: 'center',
+        backgroundColor: 'green',
+    }
 });
