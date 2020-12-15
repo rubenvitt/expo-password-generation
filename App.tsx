@@ -1,27 +1,22 @@
 import React from 'react';
-import {Button, ThemeProvider} from "react-native-elements";
+import {Button, Theme, ThemeProvider, withTheme} from "react-native-elements";
 import {StyleSheet, View, ViewStyle} from "react-native";
 import Icon from 'react-native-vector-icons/FontAwesome5';
+import {useColorScheme} from "react-native-appearance";
+import {MainContent} from "./components/content/main.content.component";
 
 export default function App() {
+    const theme: Theme = {
+        colors: {
+            primary: 'orange',
+        }
+    }
+
+    const colorScheme = useColorScheme();
+
     return (
-        <ThemeProvider>
-            <View style={styles.container}>
-                <Button type="clear" icon={<Icon size={36} name={'arrow-right'} color={"white"} />}/>
-            </View>
+        <ThemeProvider theme={theme} useDark={colorScheme === 'dark'}>
+            <MainContent />
         </ThemeProvider>
     );
 };
-
-interface Styles {
-    container: ViewStyle;
-}
-
-const styles = StyleSheet.create<Styles>({
-    container: {
-        flex: 1,
-        alignItems: 'stretch',
-        justifyContent: 'center',
-        backgroundColor: 'green',
-    }
-});
