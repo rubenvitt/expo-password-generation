@@ -3822,7 +3822,7 @@ lodash.uniqby@^4.7.0:
   resolved "https://registry.yarnpkg.com/lodash.uniqby/-/lodash.uniqby-4.7.0.tgz#d99c07a669e9e6d24e1362dfe266c67616af1302"
   integrity sha1-2ZwHpmnp5tJOE2Lf4mbGdhavEwI=
 
-lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.3.0, lodash@^4.5.0, lodash@^4.6.0:
+lodash@^4.15.0, lodash@^4.17.13, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19, lodash@^4.3.0, lodash@^4.5.0, lodash@^4.6.0:
   version "4.17.20"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.20.tgz#b44a9b6297bcb698f1c51a3545a2b3b368d59c52"
   integrity sha512-PlhdFcillOINfeV7Ni6oF1TAEayyZBoZ8bcshTHqOYJYlrqzRK5hagpagky5o4HfCzzd1TRkXPMFq6cKk9rGmA==
@@ -5546,6 +5546,14 @@ stream-buffers@~2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/stream-buffers/-/stream-buffers-2.2.0.tgz#91d5f5130d1cef96dcfa7f726945188741d09ee4"
   integrity sha1-kdX1Ew0c75bc+n9yaUUYh0HQnuQ=
+
+strict-password-generator@^1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/strict-password-generator/-/strict-password-generator-1.1.2.tgz#24fa13ddd0a02b67d1307074c3426bbe897c8f91"
+  integrity sha512-jOPDQ37Qt3OCOwD8PEu55iuvmPG0HxEJZBG6B7o8r5A5O2LTQAgv+GmYJbpa2kXz7nMN7BrPypb4ZWDf6NKPKQ==
+  dependencies:
+    debug "^4.1.0"
+    lodash "^4.15.0"
 
 strict-uri-encode@^2.0.0:
   version "2.0.0"
